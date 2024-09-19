@@ -1,0 +1,9 @@
+type Chapter = 
+ record {
+   content: text;
+   title: text;
+ };
+service : {
+  getChapter: (nat) -> (opt Chapter) query;
+  getChapters: () -> (vec Chapter) query;
+}
